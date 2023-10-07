@@ -40,7 +40,33 @@
                 </div>
             </div>
             
-            <button class="cn"><a href="a">JOIN US</a></button>
+            <button class="popup-button" id="popupButton">Projects</button>
+            <div class="popup-menu-container" id="popupMenu">
+                <div class="popup-menu-item">Menu Item 1</div>
+                <div class="popup-menu-item">Menu Item 2</div>
+                <div class="popup-menu-item">Menu Item 3</div>
+            </div>
+
+            <script>
+                const popupButton = document.getElementById('popupButton');
+                const popupMenu = document.getElementById('popupMenu');
+        
+                popupButton.addEventListener('click', () => {
+                    // Toggle the visibility of the pop-up menu
+                    if (popupMenu.style.display === 'block') {
+                        popupMenu.style.display = 'none';
+                    } else {
+                        popupMenu.style.display = 'block';
+                    }
+                });
+        
+                // Close the pop-up menu when clicking outside of it
+                window.addEventListener('click', (event) => {
+                    if (event.target !== popupButton && event.target !== popupMenu) {
+                        popupMenu.style.display = 'none';
+                    }
+                });
+            </script>
         </div>
 
     </div>
