@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GYASILARBI | Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="header">
@@ -22,8 +23,18 @@
         </div>
 
         <div class="content">
+            <div class="word">
             <h1>Web Designer & <br><span>Developer</span><br></h1>
             <p class="par">"Welcome to my corner of the web! I'm Collins Gyasi Larbi, a passionate web designer and developer.<br> I specialize in creating stunning and functional websites that not only look great but also deliver an<br> exceptional user experience. With a keen eye for design and a knack for coding, I bring your digital <br> visions to life. Explore my portfolio to see some of my latest projects and get in touch to <br> how I can help you make your online presence truly shine."</p>
+            
+            <button class="popup-button" id="popupButton">Projects</button>
+            <div class="popup-menu-container" id="popupMenu">
+                <div class="popup-menu-item"><a href="https://github.com/Gyasilarbi/Profile-card">Profile Card</a></div>
+                <div class="popup-menu-item"><a href="https://github.com/Gyasilarbi/pops-menu">Easy Pop-Up Menu</a></div>
+                <div class="popup-menu-item"><a href="">TourGhana mini project (Uncompleted)</a></div>
+                <div class="popup-menu-item"><a href="https://github.com/Gyasilarbi/Portfolio">Portfolio</a></div>
+            </div>
+            </div>
 
             <div class="profile-card">
                 <div class="profile-info">
@@ -33,19 +44,14 @@
                 </div>
         
                 <div class="social-links">
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/gyasilarbi/"><i class="fa fa-instagram"></i></a>
+                    <a href="https://twitter.com/larbigyasi1"><i class="fa fa-twitter"></i></a>
                     <a href="#"><i class="fa fa-linkedin"></i></a>
-                    <a href="#"><i class="fa fa-github"></i></a>
+                    <a href="https://github.com/Gyasilarbi"><i class="fa fa-github"></i></a>
                 </div>
             </div>
+
             
-            <button class="popup-button" id="popupButton">Projects</button>
-            <div class="popup-menu-container" id="popupMenu">
-                <div class="popup-menu-item">Menu Item 1</div>
-                <div class="popup-menu-item">Menu Item 2</div>
-                <div class="popup-menu-item">Menu Item 3</div>
-            </div>
 
             <script>
                 const popupButton = document.getElementById('popupButton');
@@ -68,7 +74,6 @@
                 });
             </script>
         </div>
-
     </div>
 </body>
 </html> 
